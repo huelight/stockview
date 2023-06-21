@@ -12,8 +12,8 @@ export const meta: V2_MetaFunction = () => {
 };
 
 export default function Index() {
-  const [darkMode, setDarkMode] = useState<boolean>(false);
-  const [stockSymbol, setStockSymbol] = useState("FB")
+  const [darkMode, setDarkMode] = useState<boolean>(true);
+  const [stockSymbol, setStockSymbol] = useState("GOOG")
 
   return (
     <ThemeContext.Provider value={{ darkMode, setDarkMode }}>
