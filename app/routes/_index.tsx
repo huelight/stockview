@@ -3,11 +3,10 @@ import { useState } from "react";
 import Dashboard from "~/components/dashboard/Dashboard";
 import StockContext from "~/context/StockContext";
 import ThemeContext from "~/context/ThemeContext";
-
 export const meta: V2_MetaFunction = () => {
   return [
-    { title: "New Remix App" },
-    { name: "description", content: "Welcome to Remix!" },
+    { title: "Simple Stock Chart Dashboard" },
+    { name: "description", content: "This is a simple chart for viewing different stocks" },
   ];
 };
 

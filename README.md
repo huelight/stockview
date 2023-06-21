@@ -1,53 +1,44 @@
-# Welcome to Remix!
+# Simple Stock Chart Dashboard
 
-- [Remix Docs](https://remix.run/docs)
+This web application is a simple stock viewing app built with React on RemixJS. It allows users to search for stock symbols and view their historical data using the API from [Finnhub](https://finnhub.io/). The app utilizes the Recharts library to display interactive and visually appealing charts.
 
-## Development
+![App Screenshot](./public/images/screenshot.JPG)
 
-From your terminal:
+## Features
 
-```sh
-npm run dev
-```
+- Search for stock symbols
+- View historical data for selected stocks
+- Interactive charts for visualizing stock data
 
-This starts your app in development mode, rebuilding assets on file changes.
+## Technologies Used
 
-## Deployment
+- React
+- RemixJS
+- Finnhub API
+- Recharts
 
-First, build your app for production:
+## Getting Started
 
-```sh
-npm run build
-```
+1. Clone the repository:
 
-Then run the app in production mode:
+   ```bash
+   git clone https://github.com/huelight/stockview.git
 
-```sh
-npm start
-```
+2. Install the dependencies:
+    ```
+    cd Simple-Stock-Chart-Dashboard
+    npm install
 
-Now you'll need to pick a host to deploy it to.
+3. Set up the API key:
+    Obtain an API key from Finnhub.
+    Rename the .env.example file to .env and replace YOUR_API_KEY with your actual API key.
 
-### DIY
+4. Start the development server:
+   ```
+   npm run dev
 
-If you're familiar with deploying node applications, the built-in Remix app server is production-ready.
+5. Open your browser and navigate to http://localhost:3000 to access the app.
 
-Make sure to deploy the output of `remix build`
 
-- `build/`
-- `public/build/`
-
-### Using a Template
-
-When you ran `npx create-remix@latest` there were a few choices for hosting. You can run that again to create a new project, then copy over your `app/` folder to the new project that's pre-configured for your target server.
-
-```sh
-cd ..
-# create a new project, and pick a pre-configured host
-npx create-remix@latest
-cd my-new-remix-app
-# remove the new project's app (not the old one!)
-rm -rf app
-# copy your app over
-cp -R ../my-old-remix-app/app app
-```
+## License
+    This project is licensed under the MIT License.
